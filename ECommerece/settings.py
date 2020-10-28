@@ -27,7 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
 '127.0.0.1',
-'www.sr-textile.com']
+'sr-textile.herokuapp.com']
 
 
 # Application definition
