@@ -1,0 +1,129 @@
+{% extends 'srtextile/basic.html' %}
+{% block title %}Home{% endblock %}
+{%load static%}
+
+{% block css %}
+.col-md-3
+{
+display: inline-block;
+margin-left:-4px;
+}
+
+.carousel-indicators .active {
+background-color: #1e1e1e;
+}
+
+
+.carousel-indicators li {
+background-color: #1e1e1e;
+}
+
+body .carousel-indicators{
+bottom: -50px;
+}
+
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+background-color: black;
+}
+
+.col-md-3 img {
+    width: 15.87vw;
+    height: 20rem;
+}
+
+.btn-primary {
+    color: #343a40;
+    background-color: #929da0;
+    border-color: #343a40;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+body .no-padding{
+padding-left: 0,
+padding-right: 0;
+}
+.ab{
+color:#fff;
+}
+#top {
+  position: relative;
+  text-align: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#unitpic{
+margin-top:150px;
+border:6px solid #e59f18 ;
+border-radius: 6px;
+
+width:100%;
+
+object-fit: contain;
+}
+ {% endblock %}
+
+
+{% block body %}
+
+
+<div class="container-fluid pl-0 pr-0" style="letter-spacing:1px; font-family:Montserrat">
+
+
+    <div class="container pl-0 pr-0 " style="color:#343a40;">
+        <h1 class="pt-5 mt-5 text-center">About Us</h1>
+        <hr class="ribbon mt-0 mb-5 mx-auto" width="8%" style="border:3px solid #e59f18;">
+        <div class="about">
+            <div class="row">
+                <div class="col-sm-8 pb-5">
+                    <div class="col-sm-12">
+                        <p style="text-align: justify; font-size: medium">
+                            We are ISO 9001:2000 Certified Vertically integrated Composite textile Industry in Pakistan with entire control from yarn to finished garments. We make garments in different count &amp; constructions in different blends, weave, weight (gsm), Color, etc. As per the requirement of our esteem buyers.
+                        </p>
+                    </div>
+
+                    <div style="clear: both"></div>
+                    <h3 style="padding-left: 10px"><b>OUR VISION</b></h3>
+                    <div class="col-sm-12">
+                        <p style="text-align: justify; font-size: medium">
+                            Our mission is to be at the helm of cutting edge innovation when it comes to technical fabrics, ensuring that we create materials of unmatched quality and strength.
+                        </p>
+                    </div>
+
+                    <div style="clear: both"></div>
+
+                    <h3 style="padding-left: 10px"><b>OUR MISSION</b></h3>
+                    <div class="col-sm-12">
+                        <p style="text-align: justify; font-size: medium">
+                            Our mission is to grow a composite textile industry and make a global impact as a manufacturer of a wide range of industry specific textile Products.
+                            <br>
+                            We encourage a spirit of Progression and harmony among our employees in a positive work enviroment, contributing to the organic growth of the company as a whole.
+                        </p>
+                    </div>
+
+
+                    <div style="clear: both"></div>
+                    <br>
+
+                </div>
+                <div class="col-sm-4 pb-5">
+                    <img id='unitpic' class="img-fluid" src="{%static 'srtextile/StitchingUnit.jpg'%}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock%}
+

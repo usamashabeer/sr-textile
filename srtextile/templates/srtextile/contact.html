@@ -1,0 +1,122 @@
+{% extends 'srtextile/basic.html' %}
+{% block title %}Home{% endblock %}
+
+{% block css %}
+.col-md-3
+{
+display: inline-block;
+margin-left:-4px;
+}
+
+.carousel-indicators .active {
+background-color: #1e1e1e;
+}
+
+
+.carousel-indicators li {
+background-color: #1e1e1e;
+}
+
+body .carousel-indicators{
+bottom: -50px;
+}
+
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+background-color: black;
+}
+
+.col-md-3 img {
+    width: 15.87vw;
+    height: 20rem;
+}
+
+.btn-primary {
+    color: #343a40;
+    background-color: #929da0;
+    border-color: #343a40;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+body .no-padding{
+padding-left: 0,
+padding-right: 0;
+}
+
+#top {
+  position: relative;
+  text-align: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ab{
+color:#fff;
+}
+p{
+color:#999999;
+}
+ {% endblock %}
+
+
+{% block body %}
+{%load static%}
+<div class="container-fluid mt-5 pl-0 pr-0" style="font-family:Montserrat">
+
+<!--        <img src="{% static 'srtextile/contactus2.jpg' %}" class="img-fluid" alt="">-->
+    <div class="centered">
+
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h1 class="text-center pt-5" style="color:#343a40;">Contact Us</h1>
+        <hr class="ribbon mt-0 mb-5 mx-auto" width="8%" style="border:3px solid #e59f18;">
+        <div class="row" style="padding-left: 70px">
+
+            <div class="col-sm-6 ">
+                <h3 style="color:#343a40;">Address:</h3>
+                <p>
+                    Suit # 120, 123 or 105, MZ Floor, Landmark Plaza,<br>
+                    Jail Road,
+                    <br>
+                    Lahore-54000, Pakistan.
+                </p>
+
+                <h3 style="color:#343a40;">Cell No:</h3>
+                <p>
+                    PAK: +92-300-4778703<br>
+                    PAK: +92-300-4678005<br>
+
+                </p>
+                <h3 style="color:#343a40;">E-mail:</h3>
+                <p><a style="color: #999999" href="mailto:shabbir@sr-textile.com">shabir@sr-textile.com</a> </p>
+                <h3 style="color:#343a40;">URL:</h3>
+                <p>
+                    www.sr-textile.com
+                </p>
+                <h3 style="color:#343a40;">Unit Address:</h3>
+                <p>
+                    Office#06 Street#01, Nadia Gee Mill,<br> Pakistan Mint, Lahore 54000,<br>  Pakistan.
+                </p>
+            </div>
+
+            <div class="col-sm-6 animated wow zoomIn">
+                <img style="border-radius: 5px;"  src="{%static 'srtextile/contactus.png'%}" class="img-fluid" alt="">
+                <br>
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock%}
+

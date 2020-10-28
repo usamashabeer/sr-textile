@@ -1,0 +1,204 @@
+{% extends 'srtextile/basic.html' %}
+{% block title %}Home{% endblock %}
+
+{% block css %}
+
+.col-md-3
+{
+display: inline-block;
+margin-left:-4px;
+}
+.card{
+box-shadow: 0 10px 20px rgba(255,255,255,.40), 0 10px 20px rgba(11,10,10,.06);
+}
+.card:hover{
+transform: scale(1.05);
+  box-shadow: 0 20px 20px rgba(0,22,0,.12), 0 4px 8px rgba(11,10,10,.06);
+}
+
+.carousel-indicators .active {
+background-color: #1e1e1e;
+}
+
+
+.carousel-indicators li {
+background-color: #1e1e1e;
+}
+
+body .carousel-indicators{
+bottom: -50px;
+}
+
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+background-color: black;
+}
+
+.col-md-3 img {
+width: 15.87vw;
+height: 20rem;
+}
+
+.btn-primary {
+    color: #343a40;
+    background-color: #929da0;
+    border-color: #343a40;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+body .no-padding{
+padding-left: 0,
+padding-right: 0;
+}
+#garment-guide{
+padding: 50px 60px 60px 60px;
+}
+.card-img-top{
+height: 15rem;
+object-fit: contain;
+}
+#clients{
+padding: 60px 60px 60px 60px;
+}
+
+/* visited link */
+a:visited {
+  color: #000;
+  text-decoration: none;
+
+}
+
+/* mouse over link */
+a:hover {
+  color: #000;
+  text-decoration: none;
+
+}
+
+{% endblock %}
+
+
+{% block body %}
+<!--{% load static%}-->
+<div class="container-fluid mt-5 pl-0 pr-0">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'srtextile/slideshow-image1.jpg'%}" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'srtextile/slideshow-image2.jpg'%}" class="d-block w-100"  alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'srtextile/slideshow-image4.jpg'%}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'srtextile/slideshow-image5.jpg'%}" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <hr class="ribbon mt-0 mb-0"  style="border: 3px solid #e59f18; border-radius:0px">
+    <div style="background-color: #f1f1f1; width: 100%; color:#343a40">
+        <section class="about text-center">
+            <div class="container px-4">
+                <div class="row " style="padding-top: 30px;">
+                    <h2 class="mx-auto mb-4">WELCOME TO OUR WEBSITE</h2>
+                    <img class="img-fluid mb-3" src="{%static 'srtextile/top1.png'%}" alt=""><br>
+                    <p style="text-align: center; line-height: 150%;  font-size:17px; ;font-family:Montserrat; ">We, SR Textile introduce ourselves as a rapidly growing company Manufactures &amp; Exporter of Industrial Work Wear Garments. It was established in 1989 and since then we are serving our valued customers very successfully. We believe in good quality at competitive prices. User requirement are carefully evaluated and specification are made to meet satisfaction. The reputation for excellence and performance has been earned through many years by standard quality products.
+                        <br>
+                        <b style="font-size:20px;">BUSINESS PHILOSOPHY</b><br>
+                        PROFESSIONALISM, honesty and hardworking is the core of our business policy.
+                        <br>
+                       </p>
+                </div>
+            </div>
+        </section>
+        <!-- end of about section -->
+    </div>
+    <div  class="container-fluid" style="background-color:#343a40;color:#fff">
+        <div id="garment-guide" class="container" >
+            <h2 class="text-center pb-4" >Garment</h2>
+            <div class="row cols-3 text-center" style="color:black;">
+                <div class="col">
+                    <div class="card mb-3" style="width: 20rem;">
+                        <a href="/srtextile/Product">
+                            <img src="{% static 'srtextile/banner-img1.jpeg'%}" class="card-img-top" alt="...">
+                            <hr class="ribbon mt-0 mb-0"  style="border:2px solid #e59f18; border-radius:0px;">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <b style="font-size:14px;">GENERAL WORKWEAR</b>
+                                    <p style="font-size:12px;">Manufactures & Exporter of Industrial Work Wear Garments.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3" style="width: 20rem;" >
+                        <a href="/srtextile/Product">
+                            <img src="{% static 'srtextile/banner-img2.jpg'%}" class="card-img-top" alt="...">
+                            <hr class="ribbon mt-0 mb-0"  style="border:2px solid #e59f18; border-radius:0px;">
+                            <div class="card-body" >
+                                <div class="card-text">
+                                    <b style="font-size:14px;">KITCHEN WEAR</b>
+                                    <p style="font-size:12px;">Manufactures & Exporter of Industrial Work Wear Garments.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3" style="width: 20rem;">
+                        <a href="/srtextile/Product">
+                            <img src="{% static 'srtextile/banner-img3.jpg'%}" class="card-img-top" alt="...">
+                            <hr class="ribbon mt-0 mb-0"  style="border:2px solid #e59f18; border-radius:0px;">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <b style="font-size:14px;">FLAME RETARTDANT PLUS ANTISTATIC</b>
+                                    <p style="font-size:12px;">Manufactures & Exporter of Industrial Work Wear Garments.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="bottom">
+        <hr class="ribbon mt-0 mb-0 "  style="border:4px solid #e59f18;">
+        <img src="{% static 'srtextile/bottom.jpg'%}" class="img-fluid" alt="...">
+<!--        <hr class="ribbon mt-0 mb-0"  style="border:2px solid #e59f18;">-->
+    </div>
+    <div class="container-fluid" style="background-color:#f1f1f1;">
+        <div id="clients" class="container">
+            <h2 class="text-center pb-2">Our Valued Clients</h2>
+            <hr class="ribbon mt-0 mb-0 mx-auto" width="10%" style="border:3px solid #e59f18;">
+            <div class="container pt-4">
+                <section class="customer-logos slider">
+                    <div class="slide"><img src="{%static 'srtextile/client/clients01.jpg'%}"></div>
+                    <div class="slide"><img src="{%static 'srtextile/client/clients02.jpg'%}"></div>
+                    <div class="slide"><img src="{%static 'srtextile/client/clients04.jpg'%}"></div>
+                    <div class="slide"><img src="{%static 'srtextile/client/clients05.jpg'%}"></div>
+                    <div class="slide"><img src="{%static 'srtextile/client/clients08.jpg'%}"></div>
+                    <div class="slide"><img src="{%static 'srtextile/client/clients09.jpg'%}"></div>
+                    <div class="slide"><img src="{%static 'srtextile/client/clients12.jpg'%}"></div>
+<!--                    <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>-->
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="unit" class="pt-3 pb-3">
+        <h2 class="text-center pb-2">Manufacturing Unit</h2>
+        <hr class="ribbon mt-0 mb-3 mx-auto" width="8%" style="border:3px solid #e59f18;">
+        <img id='unitpic' class="img-fluid " src="{%static 'srtextile/StitchingUnit.jpg'%}" style="width:1500px; height:600px">
+    </div>
+
+</div>
+
+
+{% endblock%}
+

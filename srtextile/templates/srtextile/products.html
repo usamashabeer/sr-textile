@@ -1,0 +1,121 @@
+{% extends 'srtextile/basic.html' %}
+{% block title %}Home{% endblock %}
+
+{% block css %}
+.col-md-3
+{
+display: inline-block;
+margin-left:-4px;
+}
+
+.carousel-indicators .active {
+background-color: #1e1e1e;
+}
+
+
+.carousel-indicators li {
+background-color: #1e1e1e;
+}
+
+body .carousel-indicators{
+bottom: -50px;
+}
+
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+background-color: black;
+}
+
+
+
+.btn-primary {
+color: #343a40;
+background-color: #929da0;
+border-color: #343a40;
+}
+.btn-primary:hover {
+color: #fff;
+background-color: #343a40;
+border-color: #343a40;
+}
+.card-text{
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+height:50px;
+}
+.card-title{
+height:30px;
+}
+.card-body{
+background-color:#343a40;
+color:#fff;
+}
+.card-body:hover{
+background-color:#fff;
+color:#343a40;
+}
+
+body .no-padding{
+padding-left: 0,
+padding-right: 0;
+}
+.card:hover{
+transform: scale(1.05);
+  box-shadow: 0 20px 20px rgba(0,22,0,.12), 0 4px 8px rgba(11,10,10,.06);
+}
+.card{
+box-shadow: 0 4px 10px rgba(0,0,0,.3), 0 5px 8px rgba(11,10,10,.06);
+}
+.card-img-top{
+height:15em;
+object-fit: contain;
+}
+a{
+color:#333333;
+text-decoration: none;
+}
+
+a:hover{
+color:#000;
+text-decoration: none;
+}
+{% endblock %}
+
+
+{% block body %}
+{% load static %}
+<div class="container ">
+    {% for product, range, nRows in allProds %}
+    <div id="{{product.0.category}}" class="mt-5 pt-4">
+        <h2 class="pt-4"><b>{{product.0.category}}</b></h2>
+        <hr class="ribbon mt-0 mb-5 mx-auto" width="100%" style="border:1px solid #e59f18;">
+        <div class="row">
+            {% for i in product%}
+            <div class="col-md-3 mb-4 ">
+                <a href="/srtextile/ProductDesc/{{i.id}}" id="pv{{i.id}}">
+                    <div class="card" style="width: 15rem;">
+                        <img class="card-img-top img-fluid" src="/media/{{i.image}}"  alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{{ i.sub_category}}</h5>
+                            <p class="card-text"><i>ART#  </i>{{ i.art_no}}</p>
+                            <!--                                                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+        </div>
+        <div class="row">
+            {% endif %}
+
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor%}
+</div>
+
+{% endblock %}
+
