@@ -55,7 +55,6 @@ python-jwt==2.0.1
 python-utils==2.3.0
 pytz==2020.1
 PyWavelets==1.1.1
-pywin32==227
 PyYAML==5.3.1
 requests==2.11.1
 requests-toolbelt==0.7.0
