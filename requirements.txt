@@ -1,6 +1,6 @@
 absl-py==0.8.1
 arrow==0.15.7
-asgiref==3.2.7
+asgiref==3.2.10
 astor==0.8.1
 certifi==2020.4.5.1
 chardet==3.0.4
@@ -9,8 +9,10 @@ contextlib2==0.6.0.post1
 cycler==0.10.0
 Cython==0.29.14
 decorator==4.4.2
+dj-database-url==0.5.0
 Django==3.1.1
 django-crispy-forms==1.9.2
+django-heroku==0.3.1
 firebase==3.0.1
 gast==0.2.2
 gcloud==0.17.0
@@ -44,6 +46,7 @@ opt-einsum==3.1.0
 Pillow==6.2.1
 portalocker==1.7.0
 protobuf==3.11.1
+psycopg2==2.8.6
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycryptodome==3.4.3
