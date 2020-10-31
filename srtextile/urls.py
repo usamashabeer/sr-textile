@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="Home"),
-    path("AboutUs/", views.about, name="AboutUs"),
+    path("https://sr-textile.herokuapp.com/srtextile/AboutUs/", views.about, name="AboutUs"),
     path("ContactUs/", views.contact, name="ContactUs"),
     path("Product/", views.products, name="Products"),
     path("FabricGuide/", views.fabric, name="FabricGuide"),
