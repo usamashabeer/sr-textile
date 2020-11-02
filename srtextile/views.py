@@ -34,7 +34,7 @@ def products(request):
     #             [products, range(1, nRows), nRows]]
     params = {'allProds': allProds}
     # return HttpResponse(request, 'Usama')
-    return render(request, "srtextile/test.html", params)
+    return render(request, "srtextile/products.html", params)
 
 
 def productDesc(request, myid):
