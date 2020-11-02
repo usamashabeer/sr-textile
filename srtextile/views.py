@@ -61,4 +61,4 @@ def garment(request):
     #             [products, range(1, nRows), nRows]]
     params = {'allProds': allProds}
 
-    return render(request, "srtextile/products.html", params)
+    return render(request, "srtextile/productDesc.html", params)
