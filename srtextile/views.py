@@ -60,4 +60,4 @@ def garment(request):
         allProds.append([prod, range(1, nSlides), nSlides])
     params = {'allProds': allProds}
     # return render(request, "srtextile/test.html",params)
-    return HttpResponse(request, "Usama")
+    return HttpResponse("Usama")
