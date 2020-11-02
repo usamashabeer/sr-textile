@@ -60,4 +60,5 @@ def garment(request):
     # allProds = [[products, range(1, nRows), nRows],
     #             [products, range(1, nRows), nRows]]
     params = {'allProds': allProds}
-    return HttpResponse('hello garment')
+
+    return render(request, "srtextile/products.html", params)
