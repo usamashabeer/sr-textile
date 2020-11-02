@@ -20,9 +20,9 @@ def contact(request):
 
 
 def products(request):
-    # allProds=[]
-    #
-    # catprods = Product.objects.values('category')
+    allProds=[]
+
+    catprods = Product.objects.values('category')
     # cats = {item['category'] for item in catprods}
     # for cat in cats:
     #     prod = Product.objects.filter(category=cat)
