@@ -20,20 +20,20 @@ def contact(request):
 
 
 def products(request):
-    allProds=[]
-
-    catprods = Product.objects.values('category')
-    cats = {item['category'] for item in catprods}
-    for cat in cats:
-        prod = Product.objects.filter(category=cat)
-        n = len(prod)
-        nSlides = n // 4 + ceil((n / 4) - (n // 4))
-        allProds.append([prod, range(1, nSlides), nSlides])
-    # params = {'no_of_slides': nRows, 'range': range(0, nRows), 'product': products}
-    # allProds = [[products, range(1, nRows), nRows],
-    #             [products, range(1, nRows), nRows]]
-    params = {'allProds': allProds}
-    return HttpResponse('Usama')
+    # allProds=[]
+    #
+    # catprods = Product.objects.values('category')
+    # cats = {item['category'] for item in catprods}
+    # for cat in cats:
+    #     prod = Product.objects.filter(category=cat)
+    #     n = len(prod)
+    #     nSlides = n // 4 + ceil((n / 4) - (n // 4))
+    #     allProds.append([prod, range(1, nSlides), nSlides])
+    # # params = {'no_of_slides': nRows, 'range': range(0, nRows), 'product': products}
+    # # allProds = [[products, range(1, nRows), nRows],
+    # #             [products, range(1, nRows), nRows]]
+    # params = {'allProds': allProds}
+    return HttpResponse(request, 'Usama')
     # return render(request, "srtextile/products.html", params)
 
 
