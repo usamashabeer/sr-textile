@@ -59,4 +59,4 @@ def garment(request):
         nSlides = n // 4 + ceil((n / 4) - (n // 4))
         allProds.append([prod, range(1, nSlides), nSlides])
     params = {'allProds': allProds}
-    return render(request, "srtextile/products.html",params)
+    return render(request, "srtextile/test.html",params)
