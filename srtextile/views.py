@@ -20,9 +20,9 @@ def contact(request):
 
 
 def products(request):
-    allProds=[]
-
-    catprods = Product.objects.values('category')
+    # allProds=[]
+    #
+    # catprods = Product.objects.values('category')
     # cats = {item['category'] for item in catprods}
     # for cat in cats:
     #     prod = Product.objects.filter(category=cat)
@@ -60,4 +60,4 @@ def garment(request):
     #     allProds.append([prod, range(1, nSlides), nSlides])
     # params = {'allProds': allProds}
     # # return render(request, "srtextile/test.html",params)
-    return HttpResponse("Usama")
+    return HttpResponse("Usama chishti")
