@@ -49,10 +49,10 @@ def fabric(request):
 
 
 def garment(request):
-    # allProds = []
-    #
-    # catprods = Product.objects.values('category')
-    # cats = {item['category'] for item in catprods}
+    allProds = []
+
+    catprods = Product.objects.values('category')
+    cats = {item['category'] for item in catprods}
     # for cat in cats:
     #     prod = Product.objects.filter(category=cat)
     #     n = len(prod)
