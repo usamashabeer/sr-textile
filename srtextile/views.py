@@ -60,5 +60,5 @@ def garment(request):
     # allProds = [[products, range(1, nRows), nRows],
     #             [products, range(1, nRows), nRows]]
     params = {'allProds': allProds}
-    product = Product.objects.filter(id=1)
-    return render(request, "srtextile/productDesc.html", {'product': product})
+
+    return render(request, "srtextile/contact.html")
