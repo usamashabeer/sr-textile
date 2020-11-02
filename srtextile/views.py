@@ -33,7 +33,8 @@ def products(request):
     # allProds = [[products, range(1, nRows), nRows],
     #             [products, range(1, nRows), nRows]]
     params = {'allProds': allProds}
-    return render(request, "srtextile/products.html", params)
+    return HttpResponse('Usama')
+    # return render(request, "srtextile/products.html", params)
 
 
 def productDesc(request, myid):
