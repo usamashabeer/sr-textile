@@ -43,8 +43,9 @@ def productDesc(request, myid):
 
 
 def fabric(request):
-    return HttpResponse('Usama')
-    # return render(request, "srtextile/fabric.html")
+    # return HttpResponse('Usama')
+    return render(request, "srtextile/fabric.html")
+
 
 def garment(request):
     allProds = []
